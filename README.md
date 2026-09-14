@@ -9,4 +9,4 @@ pinned: false
 
 # Портфолио — Хайрльварин Булат
 
-Senior Graphic Designer & Automation Expert
+Системный аналитик
