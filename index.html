@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Хайрльварин Булат — Senior Graphic Designer с навыками автоматизации (Python/JS). 10+ лет опыта. Уфа/Москва.">
-<meta name="keywords" content="графический дизайнер, автоматизация, Python, JavaScript, упаковка, prepress, Уфа, Москва, Design Technologist">
-<title>Хайрльварин Булат | Senior Graphic Designer & Automation Expert</title>
+<meta name="description" content="Хайрльварин Булат — Системный-аналитик с экспертизой в автоматизации процессов. 10+ лет опыта. Уфа/Москва.">
+<meta name="keywords" content="системный аналитик, автоматизация процессов, Уфа, Москва, аналитик производственных процессов, Design Technologist">
+<title>Хайрльварин Булат | Системный-аналитик · Автоматизация процессов</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -207,15 +207,6 @@ body {
     80% { transform: translate(2px, -2px); }
 }
 
-@keyframes typewriter {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-
 @keyframes rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
@@ -224,6 +215,11 @@ body {
 @keyframes morph {
     0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
     50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
 }
 
 .animate-on-scroll {
@@ -375,7 +371,6 @@ nav a:hover::after, nav a.active::after { width: 100%; }
     opacity: 1;
 }
 
-/* Morphing shape behind photo */
 .hero-photo::before {
     content: '';
     position: absolute;
@@ -389,7 +384,6 @@ nav a:hover::after, nav a.active::after { width: 100%; }
     z-index: 0;
 }
 
-/* Floating tech badges */
 .tech-badge {
     position: absolute;
     background: var(--medium-gray);
@@ -428,7 +422,7 @@ nav a:hover::after, nav a.active::after { width: 100%; }
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
     letter-spacing: -2px;
     margin-bottom: 12px;
@@ -442,13 +436,12 @@ nav a:hover::after, nav a.active::after { width: 100%; }
     position: relative;
 }
 
-/* Glitch effect on hover */
 .hero-content h1:hover {
     animation: gradient 5s ease infinite, glitch 0.3s ease;
 }
 
 .hero-content .title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--accent-light);
     font-weight: 600;
     margin-bottom: 25px;
@@ -466,7 +459,7 @@ nav a:hover::after, nav a.active::after { width: 100%; }
     color: var(--text-muted);
     margin-bottom: 30px;
     line-height: 1.7;
-    max-width: 600px;
+    max-width: 650px;
 }
 
 .hero-tags {
@@ -532,11 +525,6 @@ nav a:hover::after, nav a.active::after { width: 100%; }
     animation: shimmer 3s infinite;
 }
 
-@keyframes shimmer {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
-}
-
 .salary-block .label {
     font-size: 0.85rem;
     color: var(--text-muted);
@@ -582,7 +570,7 @@ nav a:hover::after, nav a.active::after { width: 100%; }
 }
 
 .relocation-block::before {
-    content: '🚀';
+    content: '';
     position: absolute;
     top: 10px;
     right: 15px;
@@ -1121,45 +1109,6 @@ section { padding: 100px 5%; position: relative; z-index: 1; }
     color: var(--success);
 }
 
-.demo-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 25px;
-    padding: 16px 32px;
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
-    color: var(--text);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.05rem;
-    border-radius: 10px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 8px 25px rgba(0,102,255,0.3);
-    position: relative;
-    overflow: hidden;
-}
-
-.demo-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s;
-}
-
-.demo-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0,102,255,0.5);
-}
-
-.demo-button:hover::before { left: 100%; }
-
-/* ===== DEMO CTA ===== */
 .demo-cta {
     text-align: center;
     margin-top: 70px;
@@ -1213,7 +1162,7 @@ section { padding: 100px 5%; position: relative; z-index: 1; }
     position: relative;
 }
 
-/* ===== PORTFOLIO (BEHANCE) ===== */
+/* ===== PORTFOLIO ===== */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1491,40 +1440,40 @@ footer a:hover { color: var(--text); }
     <div class="hero-container">
         <div class="hero-photo">
             <div class="hero-photo-wrapper">
-                <img src="photo.png" alt="Хайрльварин Булат — Senior Graphic Designer">
+                <img src="photo.png" alt="Хайрльварин Булат — Системный-аналитик">
                 <div class="tech-badge">Python</div>
-                <div class="tech-badge">JSX</div>
-                <div class="tech-badge">3D</div>
+                <div class="tech-badge">JS</div>
+                <div class="tech-badge">1С</div>
             </div>
         </div>
         <div class="hero-content">
             <h1>Хайрльварин Булат</h1>
-            <div class="title">Senior Graphic Designer & Automation Expert</div>
+            <div class="title">Системный-аналитик · Автоматизация процессов</div>
             <p class="description">
-                Дизайнер с 10-летним опытом и уникальной экспертизой на стыке графики и программирования. 
-                Не просто создаю макеты, а выстраиваю и автоматизирую процессы. 
-                Пишу скрипты для Adobe Illustrator, создаю 3D-конфигураторы, веб-калькуляторы и Telegram-боты.
+                Специалист с 10-летним опытом на стыке производства, дизайна и разработки. 
+                Последние 5 лет фактически выполнял роль системного аналитика: анализировал процессы, 
+                собирал требования, формализовал правила и создавал работающие инструменты автоматизации. 
+                Глубокая предметная экспертиза в дизайне и производстве — моё конкурентное преимущество.
             </p>
             <div class="hero-tags">
-                <span class="tag">Adobe CC</span>
-                <span class="tag">Figma</span>
+                <span class="tag">Анализ процессов</span>
+                <span class="tag">Сбор требований</span>
                 <span class="tag">Python</span>
                 <span class="tag">JavaScript</span>
                 <span class="tag">JSX</span>
-                <span class="tag">Дизайн упаковки</span>
-                <span class="tag">Prepress</span>
-                <span class="tag">Брендинг</span>
-                <span class="tag">3D-визуализация</span>
-                <span class="tag">AI-инструменты</span>
+                <span class="tag">1С:Предприятие</span>
                 <span class="tag">Автоматизация</span>
+                <span class="tag">Написание ТЗ</span>
+                <span class="tag">Прототипирование</span>
+                <span class="tag">AI-инструменты</span>
             </div>
             
             <div class="salary-block">
                 <div class="label">Ожидаемая зарплата (на руки)</div>
                 <div class="values">
                     <div class="city">
-                        <span class="city-name"> Уфа</span>
-                        <span class="city-salary">135 000 ₽</span>
+                        <span class="city-name">️ Уфа</span>
+                        <span class="city-salary">110 000 ₽</span>
                     </div>
                     <div class="city">
                         <span class="city-name">🏙️ Москва</span>
@@ -1537,7 +1486,7 @@ footer a:hover { color: var(--text); }
                 <strong>🚀 Готов к переезду в Москву и полной работе в офисе</strong>
                 <p>
                     В случае положительного решения по офферу, планирую переехать в течение 10–14 дней с момента подписания договора. 
-                    Вопросы с жильём и логистикой решаю самостоятельно (не проблема). 
+                    Вопросы с жильём и логистикой решаю самостоятельно. 
                     Релокационный пакет не является критическим условием — рассмотрю любые варианты помощи со стороны компании как бонус.
                 </p>
             </div>
@@ -1546,7 +1495,7 @@ footer a:hover { color: var(--text); }
                 <a href="https://t.me/bullez" target="_blank"><span>💬 Telegram</span></a>
                 <a href="mailto:bullez@mail.ru"><span>✉️ Email</span></a>
                 <a href="tel:+79373495308"><span>📱 +7 (937) 349-53-08</span></a>
-                <a href="https://www.behance.net/byllez721e" target="_blank"><span>🎨 Портфолио на Behance</span></a>
+                <a href="https://www.behance.net/byllez721e" target="_blank"><span> Портфолио на Behance</span></a>
             </div>
             <a href="#contact" class="cta-button">Связаться со мной</a>
         </div>
@@ -1557,18 +1506,19 @@ footer a:hover { color: var(--text); }
 <section id="about" class="about animate-on-scroll">
     <div class="section-header">
         <h2 class="section-title">Обо мне</h2>
-        <p class="section-subtitle">Дизайнер-инженер, который превращает рутину в автоматизированные системы</p>
+        <p class="section-subtitle">Аналитик с предметной экспертизой в производстве и дизайне</p>
     </div>
     <div class="about-content">
-        <p><span class="highlight">Я не просто дизайнер — я автоматизатор процессов.</span> За 10 лет работы я прошел путь от графического дизайнера до специалиста, который создает инструменты, экономящие время и исключающие человеческие ошибки.</p>
-        <p>Моя уникальность — в сочетании <span class="highlight-accent">магистерской степени по автоматизации производственных процессов</span> и глубокого понимания дизайна. Я пишу скрипты для Adobe Illustrator, создаю 3D-конфигураторы на JavaScript, разрабатываю Telegram-ботов на Python и веб-калькуляторы, которые оптимизируют работу целых отделов.</p>
-        <p>Ищу роль, где смогу применять навыки дизайна и автоматизации для оптимизации бизнес-процессов компании. Готов к переезду в Москву и полной работе в офисе.</p>
+        <p><span class="highlight">Я не «чистый» аналитик с курсов — я практик, который 5 лет решал аналитические задачи внутри реального производства.</span> Моя формальная должность называлась «дизайнер» или "разработчик", но по факту я выполнял работу системного аналитика: приходил в цех, находил узкие места, собирал требования у менеджеров и производственников, формализовал правила и создавал инструменты, которые эти проблемы решали.</p>
+        <p>Моё <span class="highlight-accent">конкурентное преимущество</span> — глубокое понимание предметной области. Я знаю, как устроены процессы в дизайне, препрессе и на производстве изнутри. Это позволяет мне говорить на одном языке с бизнесом, производством и разработчиками, и находить реальные проблемы, а не симптомы.</p>
+        <p>Умею говорить с дизайном и разработкой. Имею техническое образование (магистр по информатике), глубокие навыки дизайна и опыт написания кода, поэтому понимаю, как устроены системы изнутри, и могу писать ТЗ, которые разработчики не будут возвращать на доработку. Для написания кода активно использую AI-инструменты как рабочий ассистент — это современный подход, который позволяет мне быстро создавать работающие решения.</p>
+        <p>Ищу позицию системного аналитика, где смогу масштабировать этот опыт: анализировать процессы, собирать требования и создавать инструменты, которые приносят измеримую пользу бизнесу.</p>
     </div>
     <div class="stats">
         <div class="stat-card"><span class="stat-number">10+</span><span class="stat-label">лет опыта</span></div>
-        <div class="stat-card"><span class="stat-number">3-5×</span><span class="stat-label">ускорение работы</span></div>
-        <div class="stat-card"><span class="stat-number">70%</span><span class="stat-label">экономия времени</span></div>
-        <div class="stat-card"><span class="stat-number">50+</span><span class="stat-label">реализованных проектов</span></div>
+        <div class="stat-card"><span class="stat-number">3-5×</span><span class="stat-label">ускорение процессов</span></div>
+        <div class="stat-card"><span class="stat-number">96%</span><span class="stat-label">сокращение времени расчётов</span></div>
+        <div class="stat-card"><span class="stat-number">15ч</span><span class="stat-label">экономии в неделю на отдел</span></div>
     </div>
 </section>
 
@@ -1576,46 +1526,69 @@ footer a:hover { color: var(--text); }
 <section id="skills" class="animate-on-scroll">
     <div class="section-header">
         <h2 class="section-title">Навыки и компетенции</h2>
-        <p class="section-subtitle">Сочетание классического дизайна и современных технологий автоматизации</p>
+        <p class="section-subtitle">Аналитика, автоматизация и предметная экспертиза</p>
     </div>
     <div class="skills-grid">
         <div class="skill-category">
-            <h3>🎨 Дизайн</h3>
+            <h3>📊 Системный-анализ</h3>
             <ul class="skill-list">
-                <li>Фирменный стиль и брендинг</li>
-                <li>Дизайн упаковки (гофрокартон)</li>
-                <li>Prepress и подготовка к печати</li>
-                <li>Полиграфический дизайн</li>
-                <li>Digital-дизайн (баннеры, соцсети)</li>
-                <li>Наружная реклама</li>
-                <li>3D-визуализация (Blender)</li>
-                <li>AI-генерация (Midjourney, ChatGPT)</li>
+                <li>Анализ процессов (AS-IS / TO-BE)</li>
+                <li>Сбор и формализация требований</li>
+                <li>Написание технических спецификаций (ТЗ)</li>
+                <li>Формализация бизнес-правил и ограничений</li>
+                <li>Оптимизация и автоматизация процессов</li>
+                <li>Прототипирование интерфейсов (Figma)</li>
             </ul>
         </div>
         <div class="skill-category">
-            <h3>💻 Программирование</h3>
+            <h3>💻 Технический стек</h3>
             <ul class="skill-list">
-                <li>Python (скрипты, Telegram-боты)</li>
-                <li>JavaScript/JSX (автоматизация Illustrator)</li>
-                <li>HTML/CSS (лендинги, калькуляторы)</li>
-                <li>3D-конфигураторы</li>
-                <li>Веб-калькуляторы производства</li>
-                <li>Парсинг данных</li>
-                <li>Автоматизация рабочих процессов</li>
-                <li>Интеграция с 1С:Предприятие</li>
+                <li>Python (скрипты, Telegram-боты, автоматизация)</li>
+                <li>JavaScript / JSX (веб-инструменты, скрипты Adobe)</li>
+                <li>HTML / CSS (лендинги, калькуляторы, конфигураторы)</li>
+                <li>C# (опыт разработки)</li>
+                <li>1С:Предприятие, Opti-Corrugated</li>
+                <li>SCADA-системы</li>
+                <li>Excel (сводные таблицы, формулы)</li>
+                <li>Git, GitHub</li>
             </ul>
         </div>
         <div class="skill-category">
-            <h3> Инструменты</h3>
+            <h3>🤖 AI-инструменты</h3>
+            <ul class="skill-list">
+                <li>ChatGPT (написание кода, анализ данных)</li>
+                <li>Qwen (рабочий ассистент)</li>
+                <li>Midjourney (генерация концептов)</li>
+                <li>Kling, Freepik AI, Nano Banana</li>
+                <li>Вайбкодинг как рабочий подход</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>🛠️ Управление и организация</h3>
+            <ul class="skill-list">
+                <li>Битрикс24, Yougile, Trello</li>
+                <li>Notion</li>
+                <li>MS PowerPoint</li>
+                <li>Tilda</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3> Дизайн (предметная экспертиза)</h3>
             <ul class="skill-list">
                 <li>Adobe Photoshop, Illustrator, InDesign</li>
                 <li>Figma, Corel Draw</li>
-                <li>Blender, SketchUp</li>
-                <li>1С:Предприятие, Opti-Corrugated</li>
-                <li>Битрикс24, Yougile, Trello</li>
-                <li>Notion, Tilda</li>
-                <li>MS PowerPoint</li>
-                <li>Git, GitHub</li>
+                <li>Blender, SketchUp (3D-моделирование)</li>
+                <li>Дизайн упаковки, Prepress</li>
+                <li>Брендинг, фирменный стиль</li>
+                <li>Полиграфический дизайн</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>🌐 Языки</h3>
+            <ul class="skill-list">
+                <li>Русский — родной</li>
+                <li>Английский — B1 (средний)</li>
+                <li>Немецкий — A2 (элементарный)</li>
             </ul>
         </div>
     </div>
@@ -1625,32 +1598,31 @@ footer a:hover { color: var(--text); }
 <section id="experience" class="experience animate-on-scroll">
     <div class="section-header">
         <h2 class="section-title">Опыт работы</h2>
-        <p class="section-subtitle">От графического дизайна к автоматизации производственных процессов</p>
+        <p class="section-subtitle">От дизайна и производства к системному анализу и автоматизации</p>
     </div>
     <div class="timeline">
         <div class="timeline-item">
             <div class="timeline-header">
                 <div class="timeline-title">
-                    <h3>Дизайнер-конструктор упаковки</h3>
+                    <h3>Дизайнер-конструктор / Аналитик производственных процессов</h3>
                     <div class="timeline-company">Добрый Картон, Уфа</div>
                 </div>
                 <div class="timeline-date">Март 2026 — настоящее время</div>
             </div>
             <div class="timeline-content">
                 <ul>
-                    <li>Разработка чертежей четырехклапанных гофроящиков и сложной высечки: лотки, самосборные коробки, лотки-трансформеры, упаковка с окнами, вкладыши, решётки, POS-конструкции из гофрокартона</li>
-                    <li>Разработка и согласование технологических карт с указанием всех параметров сборки и тиражирования для каждой позиции заказа (1С:Предприятие, Opti-Corrugated)</li>
-                    <li>Нанесение дизайна на конструктивы с учётом технических ограничений конкретных станков (высечка, гофроагрегат): допуски по форматам, зоны склейки, направление гофры</li>
-                    <li>Работа с цветовой палитрой Pantone: подбор, согласование и контроль фирменных цветов заказчика, подготовка макетов под флексопечать с разбивкой по Pantone-цветам</li>
-                    <li>Планирование и маршрутизация в производственном цехе</li>
+                    <li>Фактически выполнял функции системного аналитика на производстве: анализ процессов, сбор требований, автоматизация</li>
+                    <li>Разработка чертежей гофроящиков и сложной высечки, работа с технологическими картами в 1С:Предприятие и Opti-Corrugated</li>
+                    <li>Взаимодействие с производством: уточнение технических ограничений оборудования, допусков станков, требований ГОСТ</li>
+                    <li>Работа с цветовой палитрой Pantone, подготовка макетов под флексопечать</li>
                 </ul>
                 <div class="achievement">
-                    <strong>🏆 Ключевые достижения:</strong>
+                    <strong>🏆 Ключевые достижения (автоматизация и анализ):</strong>
                     <ul>
-                        <li>Скрипты для Adobe Illustrator (JSX) — автоматизация препресса, ускорение подготовки макетов в 3-5 раз</li>
-                        <li>Калькулятор скорости смены заказа (HTML/JS) — менеджеры рассчитывают сроки за 5 минут вместо 2 часов</li>
-                        <li>Конфигуратор техкарты с 3D-визуализацией — исключение человеческих ошибок</li>
-                        <li>Сокращение времени подготовки макета с 30-40 минут до 10 минут</li>
+                        <li><strong>Автоматизация препресса (JSX):</strong> разработал скрипты для Illustrator — ускорение подготовки макетов в 3–5 раз, исключение ошибок ручного ввода</li>
+                        <li><strong>Веб-калькулятор производительности (HTML/JS):</strong> менеджеры рассчитывают сроки за 5 минут вместо 2 часов ручного труда, точность прогнозирования 95%+</li>
+                        <li><strong>3D-конфигуратор техкарты:</strong> автоматическая проверка допусков, генерация 3D-модели, оптимизация упаковки на паллеты — время подготовки с 40 до 10 минут</li>
+                        <li><strong>Общий результат:</strong> экономия более 15 часов рабочего времени отдела в неделю</li>
                     </ul>
                 </div>
             </div>
@@ -1665,11 +1637,10 @@ footer a:hover { color: var(--text); }
             </div>
             <div class="timeline-content">
                 <ul>
-                    <li>Разработка дизайна полиграфической и рекламной продукции (баннеры, листовки, визитки, календари, сувенирная продукция)</li>
-                    <li>Подготовка макетов к печати (prepress): вылеты, цветовые профили, разрешение, обрезка, технические требования</li>
-                    <li>Адаптация и верстка готовых дизайнов под различные форматы и носители</li>
-                    <li>Проверка макетов на соответствие требованиям типографии</li>
-                    <li>Создание живой 3D-визуализации с помощью ИИ</li>
+                    <li>Разработка дизайна полиграфической и рекламной продукции</li>
+                    <li>Подготовка макетов к печати (prepress): вылеты, цветовые профили, разрешение, технические требования</li>
+                    <li>Взаимодействие с типографией и производством, согласование технических требований</li>
+                    <li>Создание 3D-визуализации с помощью AI-инструментов</li>
                 </ul>
             </div>
         </div>
@@ -1683,15 +1654,15 @@ footer a:hover { color: var(--text); }
             </div>
             <div class="timeline-content">
                 <ul>
-                    <li>Разработка Telegram-ботов для автоматизации рабочих процессов дизайнера</li>
-                    <li>Создание инструментов для оптимизации рутинных задач и повышения скорости работы</li>
+                    <li>Сбор требований от пользователей, проектирование логики и разработка инструментов автоматизации</li>
+                    <li>Работа с вводом/выводом данных, условиями, циклами, строками, ООП</li>
                     <li>Верстка адаптивных лендингов на HTML/CSS</li>
                 </ul>
                 <div class="achievement">
                     <strong>🏆 Проекты:</strong>
                     <ul>
-                        <li>Telegram-бот для автоматического наложения изображений на шаблоны, масштабирования, переименования и сортировки файлов</li>
-                        <li>Telegram-бот-парсер: мониторинг открытых каналов и чатов по ключевым словам, фильтрация контента, формирование сводок</li>
+                        <li><strong>Telegram-бот для автоматизации задач дизайнера:</strong> наложение изображений на шаблоны, масштабирование, сортировка файлов — сокращение ручной работы на 70%</li>
+                        <li><strong>Telegram-бот-парсер:</strong> мониторинг каналов по ключевым словам, фильтрация по правилам (стоп-слова), формирование структурированных сводок</li>
                     </ul>
                 </div>
             </div>
@@ -1706,16 +1677,16 @@ footer a:hover { color: var(--text); }
             </div>
             <div class="timeline-content">
                 <ul>
-                    <li>Разработка фирменных стилей, логотипов, бренд-гайдов и визуальных систем для компаний из сфер финтеха, ритейла, ИБ, entertainment, ТВ и радиостанций</li>
-                    <li>Выполненные проекты: фирменный стиль к юбилею города, айдентика ТЦ, редизайн регионального ТВ-канала, визуальное продвижение радиостанций, джаз-клуба, лизинговой компании</li>
-                    <li>Работа с digital-дизайном, наружной рекламой и полиграфией</li>
-                    <li>Курирование полиграфической, digital- и презентационной продукции. Контроль качества макетов и соблюдения сроков</li>
+                    <li>Разработка фирменных стилей, логотипов, бренд-гайдов и визуальных систем для компаний из сфер финтеха, ритейла, ИБ, entertainment, ТВ и радио</li>
+                    <li>Курирование полиграфической, digital- и презентационной продукции, контроль качества и сроков</li>
+                    <li>Координация работы с подрядчиками и смежными специалистами</li>
                 </ul>
                 <div class="achievement">
                     <strong>🏆 Ключевые достижения:</strong>
                     <ul>
-                        <li>Оптимизация рабочих процессов с помощью AI-инструментов — сокращение времени разработки концептов на 70%</li>
-                        <li>Создание Telegram-бота для автоматизации рутинных задач дизайнеров</li>
+                        <li>Оптимизировал рабочие процессы с помощью AI-инструментов (ChatGPT, Midjourney) — сокращение времени разработки концептов на 70%</li>
+                        <li>Создал Telegram-бота для автоматизации рутинных задач дизайнеров</li>
+                        <li>Выполнил проекты: фирменный стиль к юбилею города, айдентика ТЦ, редизайн регионального ТВ-канала, визуальное продвижение радиостанций</li>
                     </ul>
                 </div>
             </div>
@@ -1731,8 +1702,42 @@ footer a:hover { color: var(--text); }
             <div class="timeline-content">
                 <ul>
                     <li>Разработка дизайн-системы для проекта в партнёрстве с Роснефть, Татнефть, СИБУР, Башнефть</li>
-                    <li>Полный цикл сопровождения: от концепции и прототипов до финальной реализации и внедрения</li>
+                    <li>Полный цикл сопровождения: от концепции до финальной реализации и внедрения</li>
                     <li>Координация работы с подрядчиками и смежными специалистами</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <div class="timeline-title">
+                    <h3>Программист-разработчик (C#)</h3>
+                    <div class="timeline-company">Уфимский научно-технический центр (УНТЦ)</div>
+                </div>
+                <div class="timeline-date">Август 2019 — Октябрь 2019</div>
+            </div>
+            <div class="timeline-content">
+                <ul>
+                    <li>Разработка корпоративных информационно-аналитических систем</li>
+                    <li>Моделирование и обработка промысловых данных</li>
+                    <li>Разработка ПО для мониторинга и разработки месторождений</li>
+                    <li>ИТ для выбора скважин под ГТМ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <div class="timeline-title">
+                    <h3>Инженер-программист АСУ</h3>
+                    <div class="timeline-company">СКАДтех</div>
+                </div>
+                <div class="timeline-date">Ноябрь 2018 — Сентябрь 2019</div>
+            </div>
+            <div class="timeline-content">
+                <ul>
+                    <li>Разработка конфигураций для SCADA-пакетов (C)</li>
+                    <li>Проектирование интерфейсов взаимодействия SCADA ↔ персонал</li>
+                    <li>Сбор требований на объектах заказчика, настройка контроллеров и оборудования</li>
+                    <li>Проведение ПНР и испытаний, написание руководств по работе с системой</li>
                 </ul>
             </div>
         </div>
@@ -1752,12 +1757,12 @@ footer a:hover { color: var(--text); }
                 <div class="project-tech"><span>HTML</span><span>JavaScript</span><span>3D</span><span>ГОСТ</span></div>
             </div>
             <div class="project-content">
-                <p>Полноценный инструмент для автоматического расчета техкарты гофроящика (типы А1/В1): автогенерация 3D-модели, проверка допусков, оптимизация упаковки в пачки и на паллеты.</p>
+                <p>Полноценный инструмент для автоматического расчета техкарты гофроящика (типы А1/В1 по ГОСТ 9142-2014): авторасчет формата заготовки, генерация 3D-модели, автоматическая проверка на соответствие допускам гофроагрегата и станков высечки, автооптимизация упаковки на паллеты.</p>
                 <div class="project-result">
                     <strong>💡 Результат:</strong>
                     <ul>
-                        <li>Расчет стоимости и сроков за 5 минут вместо 2 часов</li>
-                        <li>Полное исключение ошибок при расчетах</li>
+                        <li>Сокращение времени подготовки техкарты с 30–40 минут до 10 минут</li>
+                        <li>Полное исключение ошибок из-за человеческого фактора</li>
                         <li>Автоматическая проверка совместимости со станками</li>
                     </ul>
                 </div>
@@ -1765,17 +1770,17 @@ footer a:hover { color: var(--text); }
         </div>
         <div class="project-card">
             <div class="project-header">
-                <h3> Калькулятор смены заказа</h3>
+                <h3>⚡ Калькулятор смены заказа</h3>
                 <div class="project-tech"><span>HTML</span><span>JavaScript</span><span>Chart.js</span><span>Аналитика</span></div>
             </div>
             <div class="project-content">
-                <p>Расчёт производительности линий гофропереработки (шт/час) на основе диаграмм скоростей. Автоматическое определение «узкого места» производства.</p>
+                <p>Расчёт производительности линий гофропереработки (шт/час) на основе длины и ширины изделия. Система автоматически определяет «узкое место» производства по диаграммам скоростей, что позволяет менеджеру сразу называть клиенту реальные сроки.</p>
                 <div class="project-result">
                     <strong>💡 Результат:</strong>
                     <ul>
-                        <li>Мгновенный расчет реальных сроков выполнения заказа</li>
-                        <li>Оптимизация планирования производства</li>
-                        <li>Автоматическое определение узких мест</li>
+                        <li>Расчет сроков за 5 минут вместо 2 часов ручного труда</li>
+                        <li>Точность прогнозирования выросла до 95%+</li>
+                        <li>Автоматическое определение узких мест производства</li>
                     </ul>
                 </div>
             </div>
@@ -1786,13 +1791,13 @@ footer a:hover { color: var(--text); }
                 <div class="project-tech"><span>JSX</span><span>JavaScript</span><span>Automation</span><span>Prepress</span></div>
             </div>
             <div class="project-content">
-                <p>Набор скриптов для автоматизации препресса: автоматическое разбивание пунктирных линий, соединение контуров, расчет площади объектов.</p>
+                <p>Набор скриптов для автоматизации препресса: автоматическое разбивание пунктирных линий (биговки) на отдельные контуры для резки, соединение ближайших концов контуров с настраиваемым допуском, расчет площади выделенных объектов.</p>
                 <div class="project-result">
                     <strong>💡 Результат:</strong>
                     <ul>
-                        <li>Ускорение подготовки макетов в 3-5 раз</li>
-                        <li>Исключение ошибок ручного соединения</li>
-                        <li>Сокращение времени с 30-40 минут до 10 минут</li>
+                        <li>Ускорение подготовки макетов в 3–5 раз</li>
+                        <li>Исключение ошибок ручного соединения контуров</li>
+                        <li>Мгновенный расчет расхода материала для менеджеров</li>
                     </ul>
                 </div>
             </div>
@@ -1803,13 +1808,13 @@ footer a:hover { color: var(--text); }
                 <div class="project-tech"><span>Python</span><span>Telegram API</span><span>Automation</span></div>
             </div>
             <div class="project-content">
-                <p>Бот для автоматического наложения изображений на шаблоны, масштабирования, переименования и сортировки файлов. Бот-парсер для мониторинга каналов.</p>
+                <p>Бот для автоматического наложения изображений на шаблоны, масштабирования, переименования и сортировки файлов. Бот-парсер для мониторинга открытых каналов по ключевым словам с фильтрацией по правилам.</p>
                 <div class="project-result">
                     <strong>💡 Результат:</strong>
                     <ul>
                         <li>Сокращение ручной работы дизайнеров на 70%</li>
-                        <li>Автоматическая фильтрация контента</li>
-                        <li>Формирование сводок релевантных публикаций</li>
+                        <li>Автоматическая фильтрация контента по стоп-словам</li>
+                        <li>Формирование структурированных сводок релевантных публикаций</li>
                     </ul>
                 </div>
             </div>
@@ -1829,7 +1834,7 @@ footer a:hover { color: var(--text); }
 <section id="portfolio" class="animate-on-scroll" style="background: var(--dark-gray); border-top: 1px solid var(--light-gray); border-bottom: 1px solid var(--light-gray);">
     <div class="section-header">
         <h2 class="section-title">Портфолио работ</h2>
-        <p class="section-subtitle">Избранные проекты — брендинг, упаковка, полиграфия</p>
+        <p class="section-subtitle">Избранные проекты — брендинг, упаковка, полиграфия (предметная экспертиза)</p>
     </div>
     <div class="portfolio-grid">
         <div class="portfolio-card">
@@ -1881,11 +1886,11 @@ footer a:hover { color: var(--text); }
 <!-- Contact Section -->
 <section id="contact" class="contact">
     <h2>Готов к новым вызовам</h2>
-    <p>Ищу позицию, где смогу применять уникальное сочетание навыков дизайна и программирования для оптимизации бизнес-процессов и создания инновационных решений.</p>
+    <p>Ищу позицию системного аналитика, где смогу применять свой опыт автоматизации и глубокое понимание производственных процессов для оптимизации работы компании.</p>
     <div class="contact-info">
         📍 Уфа, Россия | Готов к переезду в Москву<br>
         🏢 Полная работа в офисе<br>
-        💰 От 135 000 ₽ (Уфа) / От 150 000 ₽ (Москва) на руки
+        💰 От 110 000 ₽ (Уфа) / От 150 000 ₽ (Москва) на руки
     </div>
     <div class="contact-buttons">
         <a href="mailto:bullez@mail.ru" class="contact-button"><span>✉️ Написать на Email</span></a>
@@ -1896,9 +1901,9 @@ footer a:hover { color: var(--text); }
 <!-- Footer -->
 <footer>
     <p>© 2026 Хайрльварин Булат Рамилевич</p>
-    <p>Senior Graphic Designer & Automation Expert</p>
-    <p style="margin-top: 15px;"><a href="https://www.behance.net/byllez721e" target="_blank">🎨 Портфолио на Behance</a></p>
-    <p style="margin-top: 15px;"><a href="https://disk.yandex.ru/i/I3c5VIR_ltQDAw" target="_blank">Резюме из hh.ru</a></p>
+    <p>Системный аналитик· Автоматизация бизнес-процессов</p>
+    <p style="margin-top: 15px;"><a href="https://www.behance.net/byllez721e" target="_blank"> Портфолио на Behance</a></p>
+    <p style="margin-top: 15px;"><a href="https://disk.yandex.ru/i/S8C7MxWSccYIiA" target="_blank">Резюме на hh.ru</a></p>
 </footer>
 
 <script>
